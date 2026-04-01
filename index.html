@@ -913,7 +913,21 @@
 
 
 
-<!-- Popunder Ad -->
-<script src="https://pl28962723.profitablecpmratenetwork.com/47/33/6f/47336fdfa845a907abc52ab763bd3e05.js"></script>
+
+<!-- Popunder Ad - Fires Once Only -->
+<script>
+(function(){
+  var shown = false;
+  var handler = function(){
+    if(!shown){
+      shown = true;
+      var s = document.createElement('script');
+      s.src = 'https://pl28962723.profitablecpmratenetwork.com/47/33/6f/47336fdfa845a907abc52ab763bd3e05.js';
+      document.head.appendChild(s);
+    }
+  };
+  document.addEventListener('click', handler, {once: false});
+})();
+</script>
 </body>
 </html>
