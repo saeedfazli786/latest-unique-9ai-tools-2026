@@ -73,8 +73,8 @@
             .ad-mobile { display: block; }
         }
         /* Dedication half size */
-        .ded-half { max-width: 500px; margin: 20px auto; padding: 0 16px; }
-        .ded-half-inner { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 14px; padding: 16px 20px; text-align: center; }
+        .ded-half { max-width: 640px; margin: 20px auto; padding: 0 16px; }
+        .ded-half-inner { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 16px; padding: 22px 28px; text-align: center; }
     </style>
 </head>
 <body class="gradient-bg min-h-screen">
@@ -165,9 +165,9 @@
             <!-- DEDICATION HALF SIZE MIDDLE -->
             <div class="ded-half">
                 <div class="ded-half-inner">
-                    <p class="text-white font-bold text-sm mb-1">❤️ SPECIAL DEDICATION TO MY DAUGHTER ❤️</p>
-                    <p class="text-white/90 text-xs mb-1">THIS WEBSITE IS DEDICATED TO MY SWEET, LOVELY & CARING DAUGHTER, WHO ALWAYS STANDS BY ME WHEN I FACE PROBLEMS OR ILLNESS.</p>
-                    <p class="text-white/80 text-xs italic">— A father's promise for his daughter's bright future.</p>
+                    <p class="text-white font-bold text-base mb-2">❤️ SPECIAL DEDICATION TO MY DAUGHTER ❤️</p>
+                    <p class="text-white/90 text-sm mb-2">THIS WEBSITE IS DEDICATED TO MY SWEET, LOVELY & CARING DAUGHTER, WHO ALWAYS STANDS BY ME WHEN I FACE PROBLEMS OR ILLNESS.</p>
+                    <p class="text-white/80 text-sm italic">— A father's promise for his daughter's bright future.</p>
                 </div>
             </div>
 
@@ -905,13 +905,17 @@
 
 
 
-<!-- Popunder Ad - Fires Once On Page Load -->
+
+<!-- Popunder Ad - Once Per Session Only -->
 <script>
-setTimeout(function(){
-  var s = document.createElement('script');
-  s.src = 'https://pl28962723.profitablecpmratenetwork.com/47/33/6f/47336fdfa845a907abc52ab763bd3e05.js';
-  document.body.appendChild(s);
-}, 2000);
+if(!sessionStorage.getItem('popShown')){
+  sessionStorage.setItem('popShown','1');
+  setTimeout(function(){
+    var s = document.createElement('script');
+    s.src = 'https://pl28962723.profitablecpmratenetwork.com/47/33/6f/47336fdfa845a907abc52ab763bd3e05.js';
+    document.body.appendChild(s);
+  }, 3000);
+}
 </script>
 </body>
 </html>
