@@ -138,18 +138,7 @@
     <!-- HOME PAGE -->
     <div id="homePage">
 
-        <!-- RESPONSIVE AD TOP -->
-        <div class="container mx-auto px-4 pt-6 ad-responsive">
-            <div class="ad-desktop">
-                <script>atOptions={'key':'c59b2aa2e914998c2b6d2be9ae79c1b7','format':'iframe','height':90,'width':728,'params':{}};</script>
-                <script src="https://www.highperformanceformat.com/c59b2aa2e914998c2b6d2be9ae79c1b7/invoke.js"></script>
-            </div>
-            <div class="ad-mobile">
-                <script>atOptions={'key':'4117a87dd03addfcf31cf5edea02f57a','format':'iframe','height':50,'width':320,'params':{}};</script>
-                <script src="https://www.highperformanceformat.com/4117a87dd03addfcf31cf5edea02f57a/invoke.js"></script>
-            </div>
-        </div>
-
+        
         <!-- HERO -->
         <div class="container mx-auto px-4 py-12">
             <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-4">9 Free AI Tools 2026</h2>
@@ -911,5 +900,41 @@
       showPage(pageId);
     }
     </script>
+    ... tumhara pura code ...
+
+<script>
+function showPage(pageId) {
+   // tumhara existing code
+}
+</script>
+
+<!-- ✅ NAYA CODE (alag script block) -->
+<script>
+let adShown = false;
+
+function triggerAdOnce() {
+    if (adShown) return;
+    adShown = true;
+
+    var s = document.createElement("script");
+    s.src = "https://pl28962723.profitablecpmratenetwork.com/47/33/6f/47336fdfa845a907abc52ab763bd3e05.js";
+    document.body.appendChild(s);
+}
+
+window.addEventListener("load", function() {
+    document.querySelectorAll('[onclick^="showPage"]').forEach(btn => {
+        btn.addEventListener("click", function() {
+
+            if (this.innerText.toLowerCase().includes("back")) return;
+
+            if (this.closest("#homePage")) {
+                triggerAdOnce();
+            }
+        });
+    });
+});
+</script>
+
 </body>
 </html>
+
