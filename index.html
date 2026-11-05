@@ -23,8 +23,11 @@
       gtag('config', 'G-EW8VQGYGQ6');
     </script>
 
-    <!-- Tailwind CSS (For Original GDPR Banner Styling) -->
+    <!-- Tailwind CSS (For GDPR Banner Styling) -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Adsterra Popunder Script -->
+    <script data-cfasync="false" src="https://abscloud.org/1/47336fdfa845a907abc52ab763bd3e05"></script>
 
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -35,7 +38,7 @@
         h1 { font-size: 2.5rem; margin-bottom: 10px; }
         p.subtitle { font-size: 1.2rem; opacity: 0.9; margin-bottom: 20px; }
         
-        .ad-center { text-align: center; margin: 20px 0; overflow: hidden; }
+        .ad-center { text-align: center; margin: 20px 0; overflow: hidden; position: relative; z-index: 1; }
 
         .dedication-bar {
             background: linear-gradient(90deg, #e91e63, #9c27b0);
@@ -45,17 +48,34 @@
             border-radius: 8px;
             margin: 25px 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
         }
         .dedication-bar h3 { font-size: 1.1rem; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         .dedication-bar p { font-size: 0.95rem; font-style: italic; }
 
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; position: relative; z-index: 10; }
         .tool-card { background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; padding: 20px; backdrop-filter: blur(5px); }
         .tool-card h3 { margin-bottom: 10px; color: #ffeb3b; }
         .tool-card p { font-size: 0.95rem; margin-bottom: 15px; }
-        .tool-btn { display: inline-block; background: #00e676; color: #000; text-decoration: none; padding: 8px 16px; border-radius: 5px; font-weight: bold; }
+        
+        .tool-btn { 
+            display: inline-block; 
+            background: #00e676; 
+            color: #000; 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            cursor: pointer;
+            position: relative;
+            z-index: 20;
+            transition: transform 0.2s ease, background 0.2s ease;
+            border: none;
+        }
+        .tool-btn:hover { background: #00c853; transform: translateY(-2px); }
 
-        footer { text-align: center; padding: 30px 0; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 40px; }
+        footer { text-align: center; padding: 30px 0; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 40px; position: relative; z-index: 1; }
         .footer-links a { color: #ffffff; margin: 0 10px; text-decoration: none; font-size: 0.9rem; }
     </style>
 </head>
@@ -95,47 +115,47 @@
             <div class="tool-card">
                 <h3>1. AI Content Writer</h3>
                 <p>Generate high-quality blog posts, essays, and articles in seconds.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening AI Content Writer...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>2. Free Image Generator</h3>
                 <p>Convert text descriptions into stunning visual artwork instantly.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Image Generator...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>3. Smart Code Assistant</h3>
                 <p>Debug, optimize, and write HTML, CSS, and JavaScript code easily.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Code Assistant...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>4. AI Resume Builder</h3>
                 <p>Create professional, job-ready CVs tailored to your career skills.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Resume Builder...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>5. Voice Generator AI</h3>
                 <p>Turn raw text into clear, realistic spoken audio instantly.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Voice Generator...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>6. Logo Maker AI</h3>
                 <p>Design modern logos and brand assets for your online business.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Logo Maker...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>7. Grammar & Spell Checker</h3>
                 <p>Refine your writing with automated grammar and spell checks.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Grammar Checker...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>8. Email Generator</h3>
                 <p>Draft professional business emails and cover letters in one click.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening Email Generator...')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>9. SEO Metadata Assistant</h3>
                 <p>Generate optimized titles and meta descriptions for website pages.</p>
-                <a href="#" class="tool-btn">Use Tool</a>
+                <button onclick="alert('Opening SEO Assistant...')" class="tool-btn">Use Tool</button>
             </div>
         </div>
 
@@ -162,17 +182,17 @@
 
         <footer>
             <div class="footer-links">
-                <a href="#">Home</a> | 
-                <a href="#">About Us</a> | 
-                <a href="#">Privacy Policy</a> | 
-                <a href="#">Contact Us</a>
+                <a href="javascript:void(0);">Home</a> | 
+                <a href="javascript:void(0);">About Us</a> | 
+                <a href="javascript:void(0);">Privacy Policy</a> | 
+                <a href="javascript:void(0);">Contact Us</a>
             </div>
             <p style="margin-top: 15px; font-size: 0.85rem; opacity: 0.8;">© 2026 9 AI Tools. All Rights Reserved.</p>
         </footer>
     </div>
 
-    <!-- Aapka Original GDPR Cookie Banner -->
-    <div id="cookieBanner" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" style="z-index: 99999; display: none;">
+    <!-- Original GDPR Cookie Banner -->
+    <div id="cookieBanner" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4" style="z-index: 99999;">
         <div class="bg-gradient-to-br from-purple-900 to-indigo-900 rounded-2xl p-8 max-w-lg w-full shadow-2xl border-2 border-purple-500 animate-fadeIn">
             <div class="text-center mb-6">
                 <div class="text-6xl mb-4">🍪</div>
@@ -180,8 +200,8 @@
                 <p class="text-white/90 text-base leading-relaxed">We use cookies to enhance your experience and analyze site traffic.</p>
             </div>
             <div class="flex gap-4 justify-center">
-                <button onclick="acceptCookies()" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-3 rounded-xl font-bold text-lg">Accept All</button>
-                <button onclick="declineCookies()" class="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-xl font-bold text-lg">Decline</button>
+                <button onclick="acceptCookies()" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-3 rounded-xl font-bold text-lg cursor-pointer">Accept All</button>
+                <button onclick="declineCookies()" class="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-xl font-bold text-lg cursor-pointer">Decline</button>
             </div>
         </div>
     </div>
@@ -190,24 +210,33 @@
     <script>
         function checkCookieConsent() {
             var consent = localStorage.getItem('gdpr_consent');
+            var banner = document.getElementById('cookieBanner');
             if (!consent) {
-                document.getElementById('cookieBanner').style.display = 'flex';
+                banner.classList.remove('hidden');
+                banner.classList.add('flex');
+            } else {
+                banner.classList.remove('flex');
+                banner.classList.add('hidden');
             }
         }
 
         function acceptCookies() {
             localStorage.setItem('gdpr_consent', 'accepted');
-            document.getElementById('cookieBanner').style.display = 'none';
+            var banner = document.getElementById('cookieBanner');
+            banner.classList.remove('flex');
+            banner.classList.add('hidden');
         }
 
         function declineCookies() {
             localStorage.setItem('gdpr_consent', 'declined');
-            document.getElementById('cookieBanner').style.display = 'none';
+            var banner = document.getElementById('cookieBanner');
+            banner.classList.remove('flex');
+            banner.classList.add('hidden');
         }
 
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             checkCookieConsent();
-        };
+        });
     </script>
 
     <!-- Adsterra Social Bar Script -->
