@@ -26,23 +26,6 @@
     <!-- Tailwind CSS (For Original GDPR Banner Styling) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Adsterra Popunder Script (Protected with 24-Hour Session Frequency Limit) -->
-    <script>
-        (function() {
-            var popKey = 'adsterra_popunder_shown';
-            var lastShown = localStorage.getItem(popKey);
-            var now = new Date().getTime();
-            // 24 ghante (86400000 ms) mein sirf ek baar trigger hoga
-            if (!lastShown || (now - lastShown > 86400000)) {
-                var s = document.createElement('script');
-                s.setAttribute('data-cfasync', 'false');
-                s.src = 'https://abscloud.org/1/47336fdfa845a907abc52ab763bd3e05';
-                document.head.appendChild(s);
-                localStorage.setItem(popKey, now);
-            }
-        })();
-    </script>
-
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #4A5FC1; color: #ffffff; line-height: 1.6; }
