@@ -26,9 +26,6 @@
     <!-- Tailwind CSS (For GDPR Banner Styling) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Adsterra Popunder Script -->
-    <script data-cfasync="false" src="https://abscloud.org/1/47336fdfa845a907abc52ab763bd3e05"></script>
-
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #4A5FC1; color: #ffffff; line-height: 1.6; }
@@ -114,47 +111,47 @@
             <div class="tool-card">
                 <h3>1. AI Content Writer</h3>
                 <p>Generate high-quality blog posts, essays, and articles in seconds.</p>
-                <button type="button" onclick="alert('Opening AI Content Writer...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://openai.com/chatgpt', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>2. Free Image Generator</h3>
                 <p>Convert text descriptions into stunning visual artwork instantly.</p>
-                <button type="button" onclick="alert('Opening Free Image Generator...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://www.bing.com/create', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>3. Smart Code Assistant</h3>
                 <p>Debug, optimize, and write HTML, CSS, and JavaScript code easily.</p>
-                <button type="button" onclick="alert('Opening Smart Code Assistant...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://github.com/features/copilot', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>4. AI Resume Builder</h3>
                 <p>Create professional, job-ready CVs tailored to your career skills.</p>
-                <button type="button" onclick="alert('Opening AI Resume Builder...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://www.kickresume.com/', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>5. Voice Generator AI</h3>
                 <p>Turn raw text into clear, realistic spoken audio instantly.</p>
-                <button type="button" onclick="alert('Opening Voice Generator AI...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://elevenlabs.io/', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>6. Logo Maker AI</h3>
                 <p>Design modern logos and brand assets for your online business.</p>
-                <button type="button" onclick="alert('Opening Logo Maker AI...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://hatchful.shopify.com/', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>7. Grammar & Spell Checker</h3>
                 <p>Refine your writing with automated grammar and spell checks.</p>
-                <button type="button" onclick="alert('Opening Grammar & Spell Checker...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://www.grammarly.com/', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>8. Email Generator</h3>
                 <p>Draft professional business emails and cover letters in one click.</p>
-                <button type="button" onclick="alert('Opening Email Generator...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://openai.com/chatgpt', '_blank')" class="tool-btn">Use Tool</button>
             </div>
             <div class="tool-card">
                 <h3>9. SEO Metadata Assistant</h3>
                 <p>Generate optimized titles and meta descriptions for website pages.</p>
-                <button type="button" onclick="alert('Opening SEO Metadata Assistant...')" class="tool-btn">Use Tool</button>
+                <button type="button" onclick="window.open('https://www.seoreviewtools.com/', '_blank')" class="tool-btn">Use Tool</button>
             </div>
         </div>
 
@@ -193,14 +190,12 @@
     <!-- Original GDPR Cookie Banner -->
     <div id="cookieBanner" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" style="z-index: 999999; display: none;">
         <div class="bg-gradient-to-br from-purple-900 to-indigo-900 rounded-2xl p-8 max-w-lg w-full shadow-2xl border-2 border-purple-500 animate-fadeIn">
-            <div class="text-center mb-6">
-                <div class="text-6xl mb-4">🍪</div>
-                <h2 class="text-2xl font-bold text-white mb-3">Cookie Consent</h2>
-                <p class="text-white/90 text-base leading-relaxed">We use cookies to enhance your experience and analyze site traffic.</p>
-            </div>
+            <div class="text-6xl mb-4">🍪</div>
+            <h2 class="text-2xl font-bold text-white mb-3">Cookie Consent</h2>
+            <p class="text-white/90 text-base leading-relaxed mb-6">We use cookies to enhance your experience and analyze site traffic.</p>
             <div class="flex gap-4 justify-center">
-                <button type="button" onclick="acceptCookies()" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-3 rounded-xl font-bold text-lg cursor-pointer">Accept All</button>
-                <button type="button" onclick="declineCookies()" class="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-xl font-bold text-lg cursor-pointer">Decline</button>
+                <button type="button" onclick="acceptCookies()" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-3 rounded-xl font-weight-bold text-lg cursor-pointer">Accept All</button>
+                <button type="button" onclick="declineCookies()" class="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-3 rounded-xl font-weight-bold text-lg cursor-pointer">Decline</button>
             </div>
         </div>
     </div>
